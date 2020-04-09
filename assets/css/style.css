@@ -1,0 +1,86 @@
+/* comment in a css file */
+
+
+/* RESET to collapse this you need to put ... after the final slash of region
+-------------------------------*/
+/*#region*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+
+/* Make the box-model border-box by default*/
+
+html {
+  box-sizing: border-box;
+  font-size: 22px; /*when we put rem size it means root (html) so put font-size here not to body */
+  scroll-behavior: smooth;
+}
+
+/*#endregion*/
+
+body {
+font-size: 1rem; /*rem based on root(html)!it is based on the parent em! ????*/
+font-family: sans-serif;
+color: #212121; /* it smooths the default black text*/
+line-height: 1.5; /*by default it is "em"*/
+
+
+}
+
+/*LINKS*/
+
+a {
+  text-decoration: none;
+  color: coral; /*color is a property and coral is a value*/
+  outline: none;  /*border around the element*/
+  transition: color 1s linear;  /*transtion of color of the link with no ease because it is linear now but we can put after 1s ease, opacity 1s ease; as well instead of linear*/
+}
+
+a:hover { 
+color: darkred; /*pseudo selector :hover*/
+}
+
+/*FORM ELEMETS*/
+button {
+  background: none;
+ 
+}
+
+input, input:focus {
+  border: none;
+  outline: none; /*we remove the blue rectangle which is showed when we click it */
+}
+
+/*TITLES*/
+h1, 
+h2 {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1em; /*16px by default-- em are relative so it is better for responsive design*/
+}
+
+
+
+
+/* BASIC FORMATTING
+-------------------------------- */
+
+
+
+/* HELPER CLASSES
+------------------------------------ */
+
+
+
+
+/* LAYOUT
+--------------------------------------*/
+
+
+
+
+/* MEDIA QUERIES
+---------------------------------------- */
