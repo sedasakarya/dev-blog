@@ -1,74 +1,59 @@
-<!DOCTYPE html> <!-- HTML5 -->
-<html lang="en"> <!-- root tag with lang attribute -->
-  <head> <!-- we dont see on the page, but just title on the website, meta tags are not visible either.-->
-    <meta charset="UTF-8"> <!--Which character set we use here.This meta tag should be the first one-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- initial scale is zoom's ratio, the content should be according to width of device-->
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seda's Dev Blog</title>
-
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body> <!-- All content -->
-    <aside> <!--Secondary content goes here, columns aside, e.t.c.-->
-      <header>
-        <h2>Seda's Blog</h2>
-        <figure> <!--Modern way of putting images-->
-          <img src="xxx" alt="Seda's face">
-          <figcaption> <!--Caption for images-->
-            asdasfshddfhdfdf <!--It could be made by paragraph as well.-->
-          </figcaption>
-        </figure>
-        <figure> <!--This tag is for icons as well-->
-        </figure>
-      </header>
-      <nav> <!--navigation part, we put an emmet below (search later)-->
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Post blogs</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
+  <body>
+    <header>
+      <figure>
+        <img src="assets/img/logo.png" alt="bloglogo">
+      </figure>
+      <nav>
+        <a class="uppercase" href="index.html">home</a>
+        <a class="uppercase" href="about.html">about</a>
+        <a class="uppercase" href="posts/post-template.html">posts</a>
       </nav>
-      <p>
-        <button> <!--button after the nav, we put it inside a paragraph-->
-        Get in touch
-        </button>
-    </p>
-    </aside> 
-    <main> <!--Main content-->
-      <header>
-        <h1>Dev Blog</h1> <!--Dont jump to h1 to h3 because it should be meaningfull-->
-        <p>This is my blog sub</p>
-        <form action=""> <!-- if we have two things we need to wrap them with paragraph-->
-          <input type="text">
-          <button>Subscribe</button>
-        </form>
-      </header>
+    </header>
+    <main>
       <section>
-        <figure>
-          <img src="" alt="my image">
-        </figure>
-        <h2>Section title</h2>
-        <small>Published date</small>
-        <p>Some description here...</p>
-        <a href="post-3.html">Read more...</a>
+        <img class="blog" src="https://static01.nyt.com/images/2017/09/25/dining/bonebrothchickenstock/bonebrothchickenstock-articleLarge.jpg" alt="first blog">
+        <p class="uppercase">[devsecops]</p>
+        <h1 class="underline">First Ever Blog Post</h1>
+        <article>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</article>
+        <a class="blue" href="">Read more</a>
       </section>
       <section>
-        <figure>
-          <img src="" alt="my image">
-        </figure>
-        <h2>Section title</h2>
-        <small>Published date</small>
-        <p>Some description here...</p>
-        <a href="post-3.html">Read more...</a>
-      </section>
-      <section>
-        <figure>
-          <img src="" alt="my image">
-        </figure>
-        <h2>Section title</h2>
-        <small>Published date</small>
-        <p>Some description here...</p>
-        <a href="post-3.html">Read more...</a>
+        <img class="blog" src="https://static01.nyt.com/images/2017/09/25/dining/bonebrothchickenstock/bonebrothchickenstock-articleLarge.jpg" alt="first blog">
+        <p class="uppercase">[infrastructure-as-code]</p>
+        <h1 class="underline">Second Blog Post Ever</h1>
+        <article>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</article>
+        <a class="blue" href="">Read more</a>
       </section>
     </main>
+    <footer>
+      <section class="distance">
+        <section class="follow">
+          <figure>
+            <img src="assets/img/logo.png" alt="ogo2">
+          </figure>
+        </section>
+        <section class="distance2">
+          <p>Follow</p>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-reddit"></a>
+        </section>
+      </section>
+      <section class="copyright">
+        <p>Copyright</p>
+        <i>&copy</i>
+        <p>2020 a theme by</p>
+        <a class="lineheight blue" href="#">themefisher.com</a>
+      </section>
+    </footer>
   </body>
 </html>
