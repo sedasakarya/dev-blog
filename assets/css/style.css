@@ -64,7 +64,8 @@ p {
 
 
 
-/* BASIC FORMATTING
+/* BASIC FORMATTING   (HTML / BODY FORMATTING FONT-SIZE... 
+GENERAL FORMATTING FOR TAGS)
 -------------------------------- */
 article {
   font-weight: 400;
@@ -77,20 +78,34 @@ footer {
 }
 
 
-/* HELPER CLASSES
+/* HELPER CLASSES / UTILITY CLASS
+DRY PRINCIPLE : Don't repeat yourself! We need to have sub-sections like TYPOGRAPHY(FONT FAMILY/FONT WEIGHT/LINE HEIGHT/COLOR OF TEXT) MARGINS (m-t, m-b, m-l...), PADDINGS, FLEX, BACKGROUNDS...
+ctrl + d selects a lot of lines at the same time.
 ------------------------------------ */
+
+/* PADDINGS */
+
+.distance2 {
+  padding: 20px;
+}
+
+/* MEASURES */
+
 .blog {
   width: 200px;
   height: 200px;
 }
 
+/* TYPOGRAPHY */
 .uppercase {
   text-transform: uppercase;
 }
 
-.blue {
-  color: blue;
+.lineheight {
+  line-height: 2.5;
 }
+
+/* FLEX */
 
 .follow {
   display: flex;
@@ -102,17 +117,15 @@ footer {
   display: flex;
 }
 
-.distance2 {
-  padding: 20px;
-}
-
 .copyright {
   display: flex;
   justify-content: center;
 }
 
-.lineheight {
-  line-height: 2.5;
+/* COLOR */
+
+.blue {
+  color: blue;
 }
 
 
