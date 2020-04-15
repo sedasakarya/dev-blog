@@ -130,6 +130,13 @@ footer {
   margin: 50px;
 }
 
+.flex {
+  display: flex;
+}
+
+li {
+  margin: 0.5em;
+}
 
 /* LAYOUT
 --------------------------------------*/

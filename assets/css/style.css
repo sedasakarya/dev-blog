@@ -142,11 +142,19 @@ ctrl + d selects a lot of lines at the same time.
   justify-content: center;
 }
 
+.flex li {
+  display: flex;
+  margin: 0.5em;
+}
+
 /* COLOR */
 
 .blue {
   color: blue;
+  line-height: 1.5;
 }
+
+
 
 
 /* LAYOUT
@@ -167,7 +175,6 @@ main section {
   width: 48%;
   padding: 0 2%;
   margin-bottom: 2rem;
-  background-color: #fdefe6;
 }
 
 
