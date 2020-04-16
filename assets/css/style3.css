@@ -6,14 +6,14 @@
 /*#region*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 /* Make the box-model border-box by default*/
 
 html {
-  box-sizing: border-box;
-  font-size: 22px; /*when we put rem size it means root (html) so put font-size here not to body */
+  font-size: 15px; /*when we put rem size it means root (html) so put font-size here not to body */
   scroll-behavior: smooth;
 }
 
@@ -25,7 +25,6 @@ font-family: sans-serif;
 color: #212121; /* it smooths the default black text*/
 line-height: 1.5; /*by default it is "em"*/
 
-
 }
 
 /*LINKS*/
@@ -36,10 +35,11 @@ a {
   color: #000;
   transition: 2s ease;
   font-family: open sans;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 a:hover { 
+  color: #fdefe6;
 }
 
 /*FORM ELEMETS*/
@@ -61,19 +61,14 @@ p {
   margin-bottom: 1em; 
 }
 
-article {
-  margin-bottom: 1em; 
-}
-
-
-
 
 /* BASIC FORMATTING
 -------------------------------- */
 article {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1em;
   font-family: open sans,sans-serif;
+  margin-bottom: 1em; 
 }
 
 footer {
@@ -83,10 +78,42 @@ footer {
 
 /* HELPER CLASSES
 ------------------------------------ */
-.blog {
-  width: 200px;
-  height: 200px;
+/*FLEX*/
+
+.follow {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2.667em;
 }
+
+.distance {
+  display: flex;
+}
+
+.mainpart {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3.333em;
+}
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.blog-img {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+
+/*TEXT*/
 
 .uppercase {
   text-transform: uppercase;
@@ -94,60 +121,45 @@ footer {
 
 .blue {
   color: blue;
-}
-
-.follow {
-  display: flex;
-  justify-content: flex-start;
-  padding: 40px;
-}
-
-.distance {
-  display: flex;
-}
-
-.distance2 {
-  padding: 20px;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
+  line-height: 1.5;
 }
 
 .lineheight {
   line-height: 2.5;
 }
 
-.mainpart {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px;
-}
 
 .post {
   font-weight: bolder;
-  margin: 50px;
+  font-size: 1.5em;
 }
 
-.flex {
-  display: flex;
+/*MEASURES*/
+
+.blog {
+  width: 13.333em;
+  height: 13.333em;
 }
+
+/*PADDING-MARGIN*/
+
+.distance2 {
+  padding: 1.333em;
+}
+
+
+/* LAYOUT
+--------------------------------------*/
 
 li {
   margin: 0.5em;
 }
 
-/* LAYOUT
---------------------------------------*/
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.333em;
 }
-
-
-
 
 
 /* MEDIA QUERIES

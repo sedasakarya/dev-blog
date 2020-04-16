@@ -6,14 +6,14 @@
 /*#region*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 /* Make the box-model border-box by default*/
 
 html {
-  box-sizing: border-box;
-  font-size: 22px; /*when we put rem size it means root (html) so put font-size here not to body */
+  font-size: 15px; /*when we put rem size it means root (html) so put font-size here not to body */
   scroll-behavior: smooth;
 }
 
@@ -36,7 +36,7 @@ a {
   color: #000;
   transition: 2s ease;
   font-family: open sans;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 a:hover { 
@@ -73,37 +73,20 @@ footer {
 
 article {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 1.5;
   font-family: open sans,sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 
 /* HELPER CLASSES
 ------------------------------------ */
 
+/* TEXT */
 .uppercase {
   text-transform: uppercase;
-}
-
-.follow {
-  display: flex;
-  justify-content: flex-start;
-  padding: 40px;
-}
-
-.distance {
-  display: flex;
-}
-
-.distance2 {
-  padding: 20px;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
+  font-size: 1em;
 }
 
 .lineheight {
@@ -112,33 +95,59 @@ article {
 
 .bold {
   font-weight: bolder;
-  margin: 50px;
-}
-.aboutimg {
-  display: flex;
-  justify-content: center;
-  width: 900px
-}
-
-.widhe {
-  width: 800px;
-  height: 500px;
-}
-
-.title {
-  margin:50px;
+  margin: 3.333em;
+  font-size: 1.5em;
 }
 
 .blue {
   color: blue;
-  line-height: 1.5em;
+  line-height: 1.5;
+}
+
+
+/*FLEX*/
+
+.follow {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2.667em;
+}
+
+.distance {
+  display: flex;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutimg {
+  display: flex;
+  justify-content: center;
+  width: 60em;
 }
 
 .flex {
   display: flex;
 }
 
+/*PADDING AND MARGIN*/
 
+.distance2 {
+  padding: 1.333em;
+}
+
+.title {
+  margin: 3.333em;
+}
+
+/*MEASURES*/
+
+.widhe {
+  width: 53.333em;
+  height: 33.333em;
+}
 
 
 /* LAYOUT
@@ -146,11 +155,11 @@ article {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.333em;
 }
 
 main {
-  margin: 10px;
+  margin: 0.667em;
 }
 
 li {

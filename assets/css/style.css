@@ -75,7 +75,7 @@ GENERAL FORMATTING FOR TAGS)
 -------------------------------- */
 article {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1em;
   font-family: open sans,sans-serif;
 }
 
@@ -114,10 +114,16 @@ ctrl + d selects a lot of lines at the same time.
 /* TYPOGRAPHY */
 .uppercase {
   text-transform: uppercase;
+  font-size: 1em;
 }
 
 .lineheight {
   line-height: 2.5;
+}
+
+.title {
+  text-align: center;
+  padding: 0.667em;
 }
 
 /* FLEX */
@@ -130,7 +136,7 @@ ctrl + d selects a lot of lines at the same time.
 .follow {
   display: flex;
   justify-content: flex-start;
-  padding: 40px;
+  padding: 2.667em;
 }
 
 .distance {
@@ -162,7 +168,7 @@ ctrl + d selects a lot of lines at the same time.
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.333em;
 }
 
 main {
