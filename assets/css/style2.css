@@ -95,7 +95,6 @@ article {
 
 .bold {
   font-weight: bolder;
-  margin: 3.333em;
   font-size: 1.5em;
 }
 
@@ -124,7 +123,7 @@ article {
 
 .aboutimg {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 60em;
 }
 
@@ -139,7 +138,7 @@ article {
 }
 
 .title {
-  margin: 3.333em;
+ /* margin: 3.333em; */
 }
 
 /*MEASURES*/
@@ -160,6 +159,7 @@ header {
 
 main {
   margin: 0.667em;
+  padding: 30px;
 }
 
 li {
