@@ -147,13 +147,14 @@ footer {
   padding: 1.333em;
 }
 
+/* PADDING / MARGINS */
+
+.icon {
+  margin: 0.5em;
+}
 
 /* LAYOUT
 --------------------------------------*/
-
-li {
-  margin: 0.5em;
-}
 
 header {
   display: flex;

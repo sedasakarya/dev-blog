@@ -89,10 +89,14 @@ DRY PRINCIPLE : Don't repeat yourself! We need to have sub-sections like TYPOGRA
 ctrl + d selects a lot of lines at the same time.
 ------------------------------------ */
 
-/* PADDINGS */
+/* PADDINGS - MARGIN */
 
 .distance2 {
   padding: 20px;
+}
+
+.icon {
+  margin: 0.5em;
 }
 
 /* MEASURES */
@@ -146,11 +150,6 @@ ctrl + d selects a lot of lines at the same time.
 .copyright {
   display: flex;
   justify-content: center;
-}
-
-.flex li {
-  display: flex;
-  margin: 0.5em;
 }
 
 /* COLOR */

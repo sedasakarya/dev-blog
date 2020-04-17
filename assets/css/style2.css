@@ -141,13 +141,15 @@ article {
  /* margin: 3.333em; */
 }
 
+.icon {
+  margin: 0.5em;
+}
 /*MEASURES*/
 
 .widhe {
   width: 53.333em;
   height: 33.333em;
 }
-
 
 /* LAYOUT
 --------------------------------------*/
@@ -161,13 +163,6 @@ main {
   margin: 0.667em;
   padding: 30px;
 }
-
-li {
-  margin: 0.5em;
-}
-
-
-
 
 /* MEDIA QUERIES
 ---------------------------------------- */
