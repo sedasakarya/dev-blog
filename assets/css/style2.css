@@ -149,6 +149,7 @@ article {
 .widhe {
   width: 53.333em;
   height: 33.333em;
+  border-radius: 50px 20px;
 }
 
 /* LAYOUT
@@ -157,11 +158,16 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1.333em;
+  background-color: #fdefe6;
 }
 
 main {
   margin: 0.667em;
   padding: 30px;
+}
+
+nav {
+  margin: 1.333em;
 }
 
 /* MEDIA QUERIES

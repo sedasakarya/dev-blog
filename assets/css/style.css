@@ -55,16 +55,20 @@ input, input:focus {
 h1, 
 h2 {
   font-weight: bold;
+  font-family: open sans,sans-serif;
 }
 h1 {
   font-size: 2em;
+  font-family: open sans,sans-serif;
 }
 h2 {
   font-size: 1.5em;
+  font-family: open sans,sans-serif;
 }
 
 p {
   margin-bottom: 1em; 
+  font-family: open sans,sans-serif;
 }
 
 
@@ -88,7 +92,6 @@ footer {
 DRY PRINCIPLE : Don't repeat yourself! We need to have sub-sections like TYPOGRAPHY(FONT FAMILY/FONT WEIGHT/LINE HEIGHT/COLOR OF TEXT) MARGINS (m-t, m-b, m-l...), PADDINGS, FLEX, BACKGROUNDS...
 ctrl + d selects a lot of lines at the same time.
 ------------------------------------ */
-
 /* PADDINGS - MARGIN */
 
 .distance2 {
@@ -109,6 +112,7 @@ ctrl + d selects a lot of lines at the same time.
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 50px 20px;
   /*
   position: relative;
   top: -20px;
@@ -168,6 +172,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1.333em;
+  background-color: #fdefe6;
 }
 
 main {
@@ -180,6 +185,10 @@ main section {
   width: 48%;
   padding: 0 2%;
   margin-bottom: 2rem;
+}
+
+nav {
+  margin: 1.333em;
 }
 
 
