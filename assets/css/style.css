@@ -23,7 +23,7 @@ html {
 
 body {
   font-size: 1rem; /*rem based on root(html)!it is based on the parent em! ????*/
-  font-family: sans-serif;
+  font-family: 'Alegreya Sans';
   color: #212121; /* it smooths the default black text*/
   line-height: 1.5; /*by default it is "em"*/
 }
@@ -35,7 +35,8 @@ a {
   outline: none;
   color: #000;
   transition: 2s ease;
-  font-family: open sans;
+  font-family: 'Alegreya Sans';
+  font-weight: 700;
   font-size: 15px;
 }
 
@@ -55,20 +56,22 @@ input, input:focus {
 h1, 
 h2 {
   font-weight: bold;
-  font-family: open sans,sans-serif;
+  font-family: 'Alegreya Sans';
+  font-weight: 700;
 }
 h1 {
   font-size: 2em;
-  font-family: open sans,sans-serif;
+  font-family: 'Alegreya Sans';
 }
 h2 {
   font-size: 1.5em;
-  font-family: open sans,sans-serif;
+  font-family: 'Alegreya Sans';
 }
 
 p {
   margin-bottom: 1em; 
-  font-family: open sans,sans-serif;
+  font-family: 'Alegreya Sans';
+  font-weight: 500;
 }
 
 
@@ -80,7 +83,8 @@ GENERAL FORMATTING FOR TAGS)
 article {
   font-weight: 400;
   font-size: 1em;
-  font-family: open sans,sans-serif;
+  font-family: 'Alegreya Sans';
+  font-weight: 500;
 }
 
 footer {
@@ -161,7 +165,7 @@ ctrl + d selects a lot of lines at the same time.
   display: flex;
   justify-content: center;
 }
-
+/* ASK JEROME */
 .footer_arrange {
   display: flex;
   justify-content: space-between;
@@ -174,7 +178,11 @@ ctrl + d selects a lot of lines at the same time.
   line-height: 1.5;
 }
 
-
+/* ID 
+----------------------------------------*/
+#font_weight {
+  font-weight:700;
+}
 
 
 /* LAYOUT
@@ -184,7 +192,9 @@ header {
   justify-content: space-between;
   padding: 1.333em;
   background-color: skyblue;
-  position: fixed;
+
+  /* ASK JEROME */
+  position: sticky;
   width:100%;
   overflow: hidden;
 }
@@ -202,7 +212,7 @@ main section {
 }
 
 nav {
-  margin: 2.5em;
+  margin: 1.5em;
 }
 
 
