@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seda's Dev Blog</title>
-    <link rel="stylesheet" href="../assets/css/style3.css">
+    <title>My Post Template</title> <!--Titles,Plugins, Fonts, Icons, Style.css THE ORDER -->
+    <link rel="stylesheet" href="../assets/plugins/prismjs_css/prism.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/icons/icomoon-v1.0/style.css">
+    <link rel="stylesheet" href="../assets/css/style3.css">
+    
   </head>
   <body>
     <header>
@@ -21,12 +24,28 @@
       <h1 class="post">Posts</h1>
       <section class="mainpart">
         <section>
-          <img class="blog" src="https://static01.nyt.com/images/2017/09/25/dining/bonebrothchickenstock/bonebrothchickenstock-articleLarge.jpg" alt="first blog">
-          <p class="uppercase">[devsecops]</p>
+          <img class="blog" src="" alt="first blog">
+          <p class="uppercase"></p>
           <h1 class="underline"></h1>
           <article></article>
         </section>
       </section>
+      <p>Example:</p>
+      <pre> <!--Preformated-->
+        <code class="language-js">
+          let arr1   = [1,2,3,4,5]; console.log(arr1);
+          let arr2   = ["Seda", "Mehmet", "Jane", "John"]; //console.log(arr2);
+          console.log("Numbers array", arr1[2]); // Find the element inside the array. 3
+          console.log("Strings array",arr2[2]);// Jane
+        </code>
+      </pre>
+      <pre>
+        <code class="language-css">
+          .bob {
+            width: 50%;
+          }
+        </code>
+      </pre>
     </main>
     <footer>
       <section class="distance">
@@ -49,5 +68,6 @@
         <a class="lineheight blue" href="#">themefisher.com</a>
       </section>
     </footer>
+    <script src="../assets/plugins/prismjs_css/prism.js"></script>
   </body>
 </html>
