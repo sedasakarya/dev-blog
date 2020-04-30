@@ -37,7 +37,7 @@ a {
   transition: 2s ease;
   font-family: 'Alegreya Sans';
   font-weight: 700;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 a:hover { 
@@ -81,7 +81,6 @@ p {
 GENERAL FORMATTING FOR TAGS)
 -------------------------------- */
 article {
-  font-weight: 400;
   font-size: 1em;
   font-family: 'Alegreya Sans';
   font-weight: 500;
@@ -99,7 +98,11 @@ ctrl + d selects a lot of lines at the same time.
 /* PADDINGS - MARGIN */
 
 .distance2 {
-  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+
 }
 
 .icon {
@@ -117,10 +120,6 @@ ctrl + d selects a lot of lines at the same time.
   width: 100%;
   height: auto;
   border-radius: 50px 50px;
-  /*
-  position: relative;
-  top: -20px;
-  */
 }
 
 
@@ -138,10 +137,6 @@ ctrl + d selects a lot of lines at the same time.
 .uppercase2 {
   text-transform: uppercase;
   font-size: 1.2em;
-  line-height: 2.5;
-}
-
-.lineheight {
   line-height: 2.5;
 }
 
@@ -167,16 +162,12 @@ ctrl + d selects a lot of lines at the same time.
 
 .distance {
   display: flex;
+  justify-content: space-between;
 }
 
 .copyright {
   display: flex;
   justify-content: center;
-}
-/* ASK JEROME */
-.footer_arrange {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* COLOR */
@@ -190,6 +181,7 @@ ctrl + d selects a lot of lines at the same time.
 ----------------------------------------*/
 #font_weight {
   font-weight:700;
+  text-align: center;
 }
 
 
@@ -200,11 +192,6 @@ header {
   justify-content: space-between;
   padding: 1.333em;
   background-color: skyblue;
-
-  /* ASK JEROME */
-  position: fixed;
-  width:100%;
-  overflow: hidden;
 }
 
 main {
