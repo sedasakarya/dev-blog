@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/icons/icomoon-v1.0/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style2.css">
+    <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
   </head>
   <body>
     <header>
@@ -24,11 +25,40 @@
         <figure>
           <img class="widhe" src="../assets/img/blog3.jpg" alt="Post image">
         </figure>
-        <h2 class="title">Hello, I am ThemeFisher</h2>
-        <article class="paragraph">Creative UI/UX desingerr how loves to craft beautiful that satisfy users needs the product. A best idea generate for the agency complay smart and elegant design When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees,and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me.</article>
-        <article class="paragraph">I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains.</article>
-        <article class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deserunt tempora doloribus non, voluptas dolor? Consequuntur et ad officiis iste, vero natus possimus labore veritatis a eius doloremque. Optio amet quis harum nulla vitae repellat officiis veniam accusamus error hic deleniti in, quas est illum cum natus neque possimus delectus dolore ipsam. Pariatur, ad molestias alias voluptas iusto quam debitis beatae sint similique velit, dicta eos dolorum cumque mollitia officia iure labore voluptatibus. Non at sequi, natus dolores, cum accusamus repudiandae hic blanditiis ipsum possimus qui assumenda quaerat optio ab molestias ipsa iste molestiae dignissimos. Reprehenderit quod totam nostrum nihil.</article>
-        <article class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deserunt tempora doloribus non, voluptas dolor? Consequuntur et ad officiis iste, vero natus possimus labore veritatis a eius doloremque. Optio amet quis harum nulla vitae repellat officiis veniam accusamus error hic deleniti in, quas est illum cum natus neque possimus delectus dolore ipsam. Pariatur, ad molestias alias voluptas iusto quam debitis beatae sint similique velit, dicta eos dolorum cumque mollitia officia iure labore voluptatibus. Non at sequi, natus dolores, cum accusamus repudiandae hic blanditiis ipsum possimus qui assumenda quaerat optio ab molestias ipsa iste molestiae dignissimos. Reprehenderit quod totam nostrum nihil.</article>
+        <h2 class="title">JAVASCRIPT INTRO - ARRAYS</h2>
+        <article class="paragraph">JavaScript is a scripting language which runs in the browser. It provides interactivity to the web page. In the past. JavaScript were running only in web browsers but now they are embedded in servers with the help of Node.js. It should be minded that Java and JavaScript are two different things although their names have "Java" in common.</article>
+        <article class="paragraph">There are some points that we need to be careful when we write JavaScript. First, JavaScript is case sensitive. It means "name" and "Name" are two different elements. Second, we use camelCase, if we have combined words. Third, semicolons should be used after every action we make. It is not obligatory but it is highly recommended.</article>
+        <article class="paragraph">Arrays are variables which contain many values at the same time. In other words, they work as lists. We can add arrays within arrays. Each element inside the array has index number. Index numbers start with 0 not with 1 so if we want to target second element, we should use index 1. Here are some examples of JavaScript Arrays:</article>
+        <pre>
+          <code class="language-js">
+            let arr1  = [1, 2, 3, 4, 5]; 
+            console.log(arr1);
+            let arr2  = ["Jane", "John", "James"]; 
+            console.log(arr2);
+            <br>
+            //Add an element to an array.
+            arr2.push("Rebecca"); 
+            console.log(arr2); //adds an element at the end of the array.
+            console.log( arr2.length ); // .length shows how many items we have inside the array.
+            <br>
+            //Delete an element from an array
+            arr2.pop(); 
+            console.log(arr2); // It removes the "last" element of the array.
+            arr2.shift(); 
+            console.log(arr2); // It removes the "first" element of the array.
+            arr2.splice(1, 2); 
+            console.log(arr2); /** It removes a custom element. First number is "index", 
+            second one is "how many elements we want to remove".**/
+            <br>
+            //Change a value inside an array
+            arr2[0] = "Ashley"; 
+            console.log(arr2);
+            <br>
+            //Changing elements of array with .splice
+            arr2.splice(2, 0, "Sasha");
+            console.log( arr2 );
+          </code>
+        </pre>
       </section> 
     </main>
     <footer>
@@ -58,5 +88,6 @@
         <a class="lineheight blue" href="#">themefisher.com</a>
       </section>
     </footer>
+    <script src="../assets/plugins/prism/prism.js"></script>
   </body>
 </html>
