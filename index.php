@@ -21,7 +21,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
     <link rel="stylesheet" href="assets/icons/icomoon-v1.0/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
   </head>
   <body>
     <header>
