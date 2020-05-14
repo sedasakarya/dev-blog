@@ -26,6 +26,7 @@ body {
   font-family: 'Alegreya Sans';
   color: #212121; /* it smooths the default black text*/
   line-height: 1.5; /*by default it is "em"*/
+
 }
 
 /*LINKS*/
@@ -38,9 +39,6 @@ a {
   font-family: 'Alegreya Sans';
   font-weight: 700;
   font-size: 1em;
-}
-
-a:hover { 
 }
 
 /*FORM ELEMETS*/
@@ -84,10 +82,13 @@ article {
   font-size: 1em;
   font-family: 'Alegreya Sans';
   font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1em;
 }
 
 footer {
   background-color: skyblue; 
+
 }
 
 
@@ -131,6 +132,15 @@ ctrl + d selects a lot of lines at the same time.
 }
 
 
+.widhe {
+  width: 53.333em;
+  height: 33.333em;
+  border-radius: 50px 50px;
+  display: block;
+  margin: 0 auto;
+
+}
+
 .logo_radius {
   border-radius: 50%;
 }
@@ -153,6 +163,7 @@ ctrl + d selects a lot of lines at the same time.
   padding: 0.667em;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 1.5em;
 }
 
 /* FLEX */

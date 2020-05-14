@@ -10,8 +10,8 @@ $site_data = json_decode($site_data_json, true);
 $pages = $site_data['pages'];
 
 $page = isset($_GET['page']) ? $_GET['page'] : 'index';
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en"> 
   <head>
@@ -20,8 +20,8 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
     <title>Seda's Dev Blog</title>
     <link rel="stylesheet" href="assets/icons/icomoon-v1.0/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
   </head>
   <body>
     <header>
@@ -35,6 +35,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
     </header>
     <main>
     <h1 class="title"><?php echo $pages[$page]['title']?></h1>
+    
     <?php 
         require_once("html/$page.html");
     ?>
@@ -67,5 +68,6 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
         <a class="blue" href="#">themefisher.com</a>
       </section>
     </footer>
+    <script src="assets/plugins/prism/prism.js"></script>
   </body>
 </html>

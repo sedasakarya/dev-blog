@@ -7,6 +7,22 @@
   "about": {
    "title": "About",
    "menu" : "ABOUT"
-  }
+  },
+  "posts/post01": {
+    "title": "Blog Post",
+    "menu" : ""
+   },
+   "posts/post02": {
+    "title": "Blog Post",
+    "menu" : ""
+   },
+   "posts/post03": {
+    "title": "Blog Post",
+    "menu" : ""
+   },
+   "posts/post04": {
+    "title": "Blog Post",
+    "menu" : ""
+   }
  }
 }
