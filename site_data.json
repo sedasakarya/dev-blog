@@ -1,0 +1,12 @@
+{
+  "pages"        : {
+  "index": {
+    "title": "Seda's Dev Blog",
+    "menu" : "HOME"
+  },
+  "about": {
+   "title": "About",
+   "menu" : "ABOUT"
+  }
+ }
+}

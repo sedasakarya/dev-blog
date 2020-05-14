@@ -109,6 +109,14 @@ ctrl + d selects a lot of lines at the same time.
   margin: 0.5em;
 }
 
+.paragraph {
+  text-align: justify;
+  padding: 0.667em;
+  font-weight: 500;
+  font-size: 1.2em;
+  width:100%;
+}
+
 /* MEASURES */
 
 .posts figure {

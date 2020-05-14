@@ -1,3 +1,17 @@
+<?php 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+
+$site_data_json = file_get_contents("site_data.json"); 
+
+$site_data = json_decode($site_data_json, true); 
+
+$pages = $site_data['pages'];
+
+$page = isset($_GET['page']) ? $_GET['page'] : 'index';
+
+?>
 <!DOCTYPE html>
 <html lang="en"> 
   <head>
@@ -5,6 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seda's Dev Blog</title>
     <link rel="stylesheet" href="assets/icons/icomoon-v1.0/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
@@ -14,29 +29,23 @@
         <img class="logo_radius" src="assets/img/logonew.png" alt="bloglogo">
       </figure>
       <nav>
-        <a class="uppercase" href="index.html">home</a>
-        <a class="uppercase" href="about.html">about</a>
+        <a class="uppercase" href="?page=index">home</a>
+        <a class="uppercase" href="?page=about">about</a>
       </nav>
     </header>
     <main>
-      <section>
-        <h1 class="title">About</h1>
-        <figure>
-          <img class="widhe" src="assets/img/about.jpg" alt="About image">
-        </figure>
-        <h2 class="title">Who am I ? </h2>
-        <article class="paragraph">Hi! I am Seda Sakarya. Former English teacher who is passionate about IT and IT related areas.</article>
-        <article class="paragraph"> I studied English Language and Literature and I was an English teacher. I realized that my interest lies somewhere else and I took a different tack. IT is an ongoing journey for me and I enjoy every part of it.</article>
-        <article class="paragraph">I did not have chance to go to the university to learn coding but It was not the end of the world. I found a lot of online courses and tutorials which were very useful in my IT journey. I learned HTML, CSS, JavaScript and I am still learning other programming languages. If you love lifelong learning, you are at the right place. </article>
-        <article class="paragraph">My goal is to work in IT, to gain experiences and to be an expert in a specific area of IT.</article>
-      </section> 
+    <h1 class="title"><?php echo $pages[$page]['title']?></h1>
+    <?php 
+        require_once("html/$page.html");
+    ?>
+    
     </main>
     <footer>
       <div class="footer_arrange">
         <section class="distance">
           <section class="follow">
             <figure>
-              <img class="logo_radius" src="assets/img/logonew.png" alt="ogo2">
+              <img class="logo_radius" src="assets/img/logonew.png" alt="logo2">
             </figure>
           </section>
           <section class="distance2">
@@ -55,8 +64,8 @@
         <p>Copyright</p>
         <i>&copy</i>
         <p>2020 a theme by</p>
-        <a class="lineheight blue" href="#">themefisher.com</a>
+        <a class="blue" href="#">themefisher.com</a>
       </section>
     </footer>
   </body>
-</html>  
+</html>
