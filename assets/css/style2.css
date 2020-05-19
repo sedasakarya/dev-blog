@@ -10,8 +10,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   box-sizing: border-box;
 }
 
-
-
 /* Make the box-model border-box by default*/
 
 html {
@@ -22,10 +20,12 @@ html {
 /*#endregion*/
 
 body {
-  font-size: 1rem; /*rem based on root(html)!it is based on the parent em! ????*/
-  font-family: 'Alegreya Sans';
-  color: #212121; /* it smooths the default black text*/
-  line-height: 1.5; /*by default it is "em"*/
+font-size: 1rem; /*rem based on root(html)!it is based on the parent em! ????*/
+font-family: 'Alegreya Sans';;
+color: #212121; /* it smooths the default black text*/
+line-height: 1.5; /*by default it is "em"*/
+
+
 }
 
 /*LINKS*/
@@ -59,6 +59,7 @@ h2 {
   font-family: 'Alegreya Sans';
   font-weight: 700;
 }
+
 h1 {
   font-size: 2em;
   font-family: 'Alegreya Sans';
@@ -69,21 +70,28 @@ h2 {
 }
 
 p {
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   font-family: 'Alegreya Sans';
-  font-weight: 500;
+  font-weight: 500; 
 }
 
 
 
 
-/* BASIC FORMATTING   (HTML / BODY FORMATTING FONT-SIZE... 
-GENERAL FORMATTING FOR TAGS)
+/* BASIC FORMATTING
 -------------------------------- */
+
+footer {
+  background-color: #fdefe6; 
+}
+
 article {
   font-size: 1em;
   font-family: 'Alegreya Sans';
   font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  
 }
 
 footer {
@@ -91,68 +99,23 @@ footer {
 }
 
 
-/* HELPER CLASSES / UTILITY CLASS
-DRY PRINCIPLE : Don't repeat yourself! We need to have sub-sections like TYPOGRAPHY(FONT FAMILY/FONT WEIGHT/LINE HEIGHT/COLOR OF TEXT) MARGINS (m-t, m-b, m-l...), PADDINGS, FLEX, BACKGROUNDS...
-ctrl + d selects a lot of lines at the same time.
+/* HELPER CLASSES
 ------------------------------------ */
-/* PADDINGS - MARGIN */
 
-.distance2 {
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px;
-
-}
-
-.icon {
-  margin: 0.5em;
-}
-
-/* MEASURES */
-
-.posts figure {
-  overflow: hidden;
-  height: 12em;
-}
-.blog-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 50px 50px;
-}
-
-
-.logo_radius {
-  border-radius: 50%;
-}
-
-/* TYPOGRAPHY */
+/* TEXT */
 .uppercase {
   text-transform: uppercase;
   font-size: 1.2em;
   margin: 0.667em;
 }
 
-.uppercase2 {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  line-height: 2.5;
+.blue {
+  color: blue;
+  line-height: 1.5;
 }
 
-.title {
-  text-align: center;
-  padding: 0.667em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
 
-/* FLEX */
-.flex {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
+/*FLEX*/
 
 .follow {
   display: flex;
@@ -170,20 +133,66 @@ ctrl + d selects a lot of lines at the same time.
   justify-content: center;
 }
 
-/* COLOR */
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
-.blue {
-  color: blue;
-  line-height: 1.5;
+/*PADDING AND MARGIN*/
+
+.distance2 {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+
+}
+
+.title {
+  text-align: center;
+  padding: 0.667em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.paragraph {
+  text-align: justify;
+  padding: 0.667em;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.icon {
+  margin: 0.5em;
+}
+/*MEASURES*/
+
+.widhe {
+  width: 53.333em;
+  height: 33.333em;
+  border-radius: 50px 50px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.logo_radius {
+  border-radius: 50%;
 }
 
 /* ID 
-----------------------------------------*/
+-------------------------------------*/
 #font_weight {
-  font-weight:700;
+  font-weight: 700;
   text-align: center;
 }
 
+/*#row {
+  display: flex;
+  flex-wrap:wrap;
+}*/
 
 /* LAYOUT
 --------------------------------------*/
@@ -200,18 +209,9 @@ main {
   margin: 0 auto;
 }
 
-main section {
-  width: 48%;
-  padding: 0 2%;
-  margin-bottom: 2rem;
-}
-
 nav {
   margin: 1.5em;
 }
-
-
-
 
 /* MEDIA QUERIES
 ---------------------------------------- */
